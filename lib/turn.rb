@@ -28,4 +28,7 @@ def turn(board)
   input = input_to_index(gets)
   if input && !position_taken(board, input)
     move(board, input, mark = "X")
+  else
+    turn(board)
+  end
 end
