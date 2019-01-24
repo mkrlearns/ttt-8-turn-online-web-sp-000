@@ -4,5 +4,6 @@ require_relative '../lib/turn'
 puts "Welcome to Tic Tac Toe!"
 puts "Where would you like to go?"
 display_board(board)
+turn()
 move(board, input_to_index(gets), mark = "X")
 display_board(board)
