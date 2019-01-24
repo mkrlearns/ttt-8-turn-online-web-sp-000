@@ -22,3 +22,7 @@ def position_taken?(board, input)
     return false
   end
 end
+
+def turn(board)
+  
+end
