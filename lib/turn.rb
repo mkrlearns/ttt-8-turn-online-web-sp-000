@@ -38,7 +38,6 @@ def turn(board)
   if valid_move?(board, input)
     move(board, input, mark = "X")
     display_board(board)
-    return board
   else
     turn(board)
   end
