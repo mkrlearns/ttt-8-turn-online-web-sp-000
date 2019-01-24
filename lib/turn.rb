@@ -5,6 +5,7 @@ def display_board(x)
   puts "-----------"
   puts " #{x[6]} | #{x[7]} | #{x[8]} "
 end
+
 def input_to_index(user_input)
   user_input.strip.chomp.to_i - 1
 end
@@ -12,4 +13,12 @@ end
 def move(board, index, mark = "X")
   board[index] = mark
   return board
+end
+
+def position_taken?(board, input)
+  if board[input] == "X" || board[input] == "O"
+    return true
+  else
+    return false
+  end
 end
